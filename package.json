@@ -1,0 +1,20 @@
+{
+    "name": "wc-playground",
+    "scripts": {
+        "init": "npm install",
+        "postinstall": "lerna bootstrap",
+        "clean": "lerna clean --yes",
+        "polymer:dev": "lerna run --scope lit-element-playground --stream start"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "pretty-quick --staged"
+        }
+    },
+    "devDependencies": {
+        "husky": "^1.3.1",
+        "lerna": "^3.13.2",
+        "prettier": "1.16.4",
+        "pretty-quick": "^1.10.0"
+    }
+}
