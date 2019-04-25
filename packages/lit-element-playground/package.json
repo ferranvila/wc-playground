@@ -1,8 +1,9 @@
 {
     "name": "lit-element-playground",
     "scripts": {
-        "start": "npm run build && node server.js",
-        "build": "rollup -c"
+        "start": "run-p build serve",
+        "serve": "node server.js",
+        "build": "rollup --config rollup.config.js --watch"
     },
     "devDependencies": {
         "@babel/cli": "^7.1.5",
