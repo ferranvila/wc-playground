@@ -4,7 +4,8 @@
         "init": "npm install",
         "postinstall": "lerna bootstrap",
         "clean": "lerna clean --yes",
-        "polymer:dev": "lerna run --scope lit-element-playground --stream start"
+        "polymer:dev": "lerna run --scope lit-element-playground --stream start",
+        "svelte:dev": "lerna run --scope svelte-playground --stream dev"
     },
     "husky": {
         "hooks": {
